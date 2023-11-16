@@ -1,0 +1,7 @@
+services:
+  convert:
+    image: python:3.10.13
+    volumes:
+      - ./:/veld
+    command: python /veld/convert.py
+
