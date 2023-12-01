@@ -1,7 +1,8 @@
 services:
-  convert:
-    image: python:3.10.13
+  veld:
+    image: bash:5.2.21
     volumes:
-      - ./:/veld
-    command: python /veld/convert.py
+      - ./veld_data_5_apis_oebl__ner_gold/data/:/tmp/in/
+      - ./APIS_OEBL__Named_Entity_Recognition/:/tmp/out/
+    command: cp /tmp/in/apis_oebl__ner__3_cleaned_simplified.json /tmp/out/data.json
 
