@@ -3,4 +3,4 @@
 	url = https://huggingface.co/datasets/SteffRhes/APIS_OEBL_NER
 [submodule "veld_data_5_apis_oebl__ner_gold"]
 	path = veld_data_5_apis_oebl__ner_gold
-	url = ../veld_data_5_apis_oebl__ner_gold/
+	url = https://github.com/acdh-oeaw/veld_code_5_simple_docker_test.git
