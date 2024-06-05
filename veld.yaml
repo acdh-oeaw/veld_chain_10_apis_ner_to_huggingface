@@ -1,5 +1,9 @@
 x-veld:
   chain:
+    # TODO
+    about:
+      description:
+      topics:
 
 services:
   veld:
