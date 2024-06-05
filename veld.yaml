@@ -1,5 +1,5 @@
 x-veld:
-  chain:
+  chainput:
     # TODO
     about:
       description:
@@ -9,7 +9,7 @@ services:
   veld:
     image: bash:5.2.21
     volumes:
-      - ./veld_data_5_apis_oebl__ner_gold/data/:/tmp/in/
-      - ./APIS_OEBL__Named_Entity_Recognition/:/tmp/out/
-    command: cp /tmp/in/apis_oebl__ner__3_cleaned_simplified.json /tmp/out/data.json
+      - ./veld_data_5_apis_oebl__ner_gold/data/:/veld/input/
+      - ./APIS_OEBL__Named_Entity_Recognition/:/veld/output/
+    command: cp /veld/input/apis_oebl__ner__3_cleaned_simplified.json /veld/output/data.json
 
