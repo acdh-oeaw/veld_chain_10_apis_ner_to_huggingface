@@ -1,9 +1,11 @@
 x-veld:
   chainput:
-    # TODO
     about:
-      description:
+      description: "a simple copy command, copying one file from a veld repo to a dedicated 
+        huggingface data repository for that file, containing NER gold data."
       topics:
+        - "ETL"
+        - "Named entity recognition"
 
 services:
   veld:
